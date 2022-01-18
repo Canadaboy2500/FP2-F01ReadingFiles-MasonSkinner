@@ -1,1 +1,21 @@
-file = open('stats.txt', 'r')
+#----------------------------------
+#--load_stats.py--
+#--Mason Skinner--
+#--Load the players stats in game--
+#----------------------------------
+
+
+def load_data():
+  save_file = open('stats.txt', 'r')
+  name = save_file.readline()
+  health = save_file.readline()
+  weapon = save_file.readline()
+  location = save_file.readline()
+  print(f"Character name: {name} Health: {health} Weapon: {weapon} Location: {location}")
+  save_file.close()
+  
+#----------------
+#---Main Code----
+
+
+load_data()
